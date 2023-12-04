@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/content/b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0"></script>
+    <style>
+      html, body { margin: 0; padding: 0; }
+      canvas { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    </style>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+      let img;
+      let blockSize = 20;
+      let grid = [];
+      let similartyFactor = 20;
+      let canvasWidth, canvasHeight;
+
+      function preload() {
+        img = loadImage("/content/9fbbde0336bb5842ceba915710009de7a6c31f0b177ef6b58cd29948e31267c4i0");
+      }
+
+      function setup() {
+        let imgRatio = img.width / img.height;
+
+        if (img.width > img.height) {
+          canvasWidth = max(1024, img.width);
+          canvasHeight = canvasWidth / imgRatio;
+        } else {
+          canvasHeight = max(1024, img.height);
+          canvasWidth = canvasHeight * imgRatio;
+        }
+
+        createCanvas(canvasWidth, canvasHeight);
+        noLoop();
+        img.resize(canvasWidth, canvasHeight);
+      }
+
+      function draw() {
+        background(255);
+
+        for (let y = 0; y < img.height; y += blockSize) {
+          let gRow = [];
+          for (let x = 0; x < img.width; x += blockSize) {
+            let c = img.get(x, y);
+            gRow.push({ x, y, w: blockSize, h: blockSize, c, merged: false });
+          }
+          grid.push(gRow);
+        }
+
+        let mergedBlocks = [];
+        for (let y = 0; y < grid.length; y++) {
+          for (let x = 0; x < grid[y].length; x++) {
+            if (!grid[y][x].merged) {
+              let block = getLargestSquare(x, y, grid);
+              mergedBlocks.push(block);
+              x += block.w / blockSize - 1;
+            }
+          }
+        }
+
+        for (let block of mergedBlocks) {
+          noStroke();
+          fill(block.c);
+          rect(block.x, block.y, block.w, block.h);
+          stroke(0);
+          noFill();
+          rect(block.x, block.y, block.w, block.h);
+        }
+      }
+
+      function getLargestSquare(x, y, grid) {
+        let maxSize = Math.min(grid.length - y, grid[0].length - x);
+        let color = grid[y][x].c;
+
+        for (let size = maxSize; size > 0; size--) { 
+          let canMerge = true;
+
+          for (let i = 0; i < size; i++) {
+            for (let j = 0; j < size; j++) {
+              if (grid[y + i][x + j].merged || colorDist(color, grid[y + i][x + j].c) > similartyFactor) {
+                canMerge = false;
+                break;
+              }
+            }
+            if (!canMerge) {
+              break;
+            }
+          }
+
+          if (canMerge) {
+            for (let i = 0; i < size; i++) {
+              for (let j = 0; j < size; j++) {
+                grid[y + i][x + j].merged = true;
+              }
+            }
+            return { x: x * blockSize, y: y * blockSize, w: size * blockSize, h: size * blockSize, c: color };
+          }
+        }
+      }
+
+      function colorDist(c1, c2) {
+        return abs(red(c1) - red(c2)) + abs(green(c1) - green(c2)) + abs(blue(c1) - blue(c2));
+      }
+    </script>
+  </body>
+</html>
