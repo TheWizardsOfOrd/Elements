@@ -1,0 +1,27 @@
+---
+mode: separate-outputs
+postage: 330
+parent: 905ec626d8901578ce773490c40720e010d7783c0a9933ad7d760f84668e4720i0
+inscriptions:
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription0.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription1.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription2.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription3.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription4.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription5.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription6.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription7.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription8.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription9.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
+- file: "/Users/lifo/ords/elements/examples/p5js/collection/inscription10.html"
+  destination: bc1px5lcxfdcv3a4sr5vl9g9js5fmxzfw0ls4cgdcm6lwn78aa4dqegq7ufsqk
