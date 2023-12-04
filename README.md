@@ -55,7 +55,7 @@ It's always a good idea to preview generative art code before inscribing. The fo
 
 ## Inscription Structure
 
-Elements rely on Ordinals parent/child provenance for structuring the inscribed libraries. Relevant library information such as name, version and website is included as part of inscription metadata.
+Elements rely on Ordinals parent/child provenance for structuring the inscribed libraries. Relevant library information such as name, version and website is included as a part of inscription metadata.
 
 ```
 root
