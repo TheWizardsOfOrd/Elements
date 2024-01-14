@@ -10,7 +10,64 @@
   </head>
   <body>
     <script>
-      // Your p5.js script goes here
+let cols, rows;
+let scl = 10; // Scale for terrain detail
+let w = 1400;
+let h = 1400; // Increased to ensure the terrain covers the entire canvas
+
+let terrain = [];
+let flying = 0;
+
+function setup() {
+  createCanvas(600, 600, WEBGL);
+  colorMode(HSB, 100);
+  cols = w / scl;
+  rows = h / scl;
+  for (let x = 0; x < cols; x++) {
+    terrain[x] = [];
+  }
+}
+
+function draw() {
+  flying -= 0.02;
+  let yoff = flying;
+
+  for (let y = 0; y < rows; y++) {
+    let xoff = 0;
+    for (let x = 0; x < cols; x++) {
+      terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 100);
+      xoff += 0.1;
+    }
+    yoff += 0.1;
+  }
+
+  background(0);
+  rotateX(PI / 3); // Adjust if necessary to change the perspective
+  translate(-w / 2, -h / 2); // Adjust to center the terrain on the canvas
+
+  // Enhanced Lighting
+  ambientLight(60);
+  pointLight(255, 255, 255, 0, 0, 200);
+
+  // Start from a negative y-offset to cover the top area
+  let yOffset = -200;
+
+  // Draw terrain with psychedelic colors
+  for (let y = 0; y < rows - 1; y++) {
+    beginShape(TRIANGLE_STRIP);
+    for (let x = 0; x < cols; x++) {
+      // Holographic coloring effect
+      let hueValue = (frameCount / 2 + (x * y) * 0.2) % 255;
+      let satValue = 200; // High saturation for vivid colors
+      let brightValue = map(abs(terrain[x][y]), 0, 100, 150, 255); // Higher brightness
+      fill(hueValue, satValue, brightValue);
+      let waving = sin(frameCount * 0.01 + x * 0.5) * 10; // Waving effect
+      vertex(x * scl, y * scl + yOffset, terrain[x][y] + waving);
+      vertex(x * scl, (y + 1) * scl + yOffset, terrain[x][y + 1] + waving);
+    }
+    endShape();
+  }
+}
     </script>
   </body>
 </html>
