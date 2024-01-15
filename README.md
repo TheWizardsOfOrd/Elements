@@ -23,7 +23,7 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 | --- | --- | --- | --- | --- |
 | [p5.js](https://ordinals.com/inscription/b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0) | 1.9.0 | Nov 30, 2023 | b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0 | [Cloudflare](https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js)
 | [three.js](https://ordinals.com/inscription/8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0) | r159 | Nov 30, 2023 | 8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0 | [unpkg](https://unpkg.com/three@0.159.0/build/three.module.min.js)
-| [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 14, 2023 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
+| [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 12, 2024 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
 
 ## How to use
 
