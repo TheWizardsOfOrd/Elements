@@ -23,6 +23,7 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 | --- | --- | --- | --- | --- |
 | [p5.js](https://ordinals.com/inscription/b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0) | 1.9.0 | Nov 30, 2023 | b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0 | [Cloudflare](https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js)
 | [three.js](https://ordinals.com/inscription/8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0) | r159 | Nov 30, 2023 | 8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0 | [unpkg](https://unpkg.com/three@0.159.0/build/three.module.min.js)
+| [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 14, 2023 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
 
 ## How to use
 
@@ -55,6 +56,13 @@ These example inscriptions serve a dual purpose: demonstrate the power of Elemen
   - **Inscription:** https://www.ord.io/46802198
   - **Source:** https://github.com/TheWizardsOfOrd/Elements/blob/main/examples/threejs/standalone/example.html
 
+### Degenerate
+
+- Standalone
+
+  - **Inscription:** https://ordin-delta.vercel.app/content/68589e36d708c4777e5833d8d45d350929af85ca50372f4ec1ebd7125b3cc57ai0
+  - **Source:** https://github.com/TheWizardsOfOrd/Elements/blob/main/examples/degenerate/standalone/example.html
+
 ## Boilerplate code
 
 Elements provide boilerplate code for creating standalone generative art and collections. Their purpose is to serve as a good starting point for anyone looking to inscribe generative art using Ordinals on Bitcoin.
@@ -67,6 +75,13 @@ Elements provide boilerplate code for creating standalone generative art and col
 ### three.js
 
 - [Standalone Generative Art](https://github.com/TheWizardsOfOrd/Elements/blob/main/boilerplate/threejs/standalone/inscription.html)
+
+### Degenerate
+
+> [!CAUTION]
+> Degenerate relies on WebAssembly workers. Due to CSP/iframe [issues](https://github.com/ordinals/ord/issues/3014), they may not show well in preview.
+
+- [Standalone Generative Art](https://github.com/TheWizardsOfOrd/Elements/blob/main/boilerplate/degenerate/standalone/inscription.html)
 
 ## Preview before inscribe
 
