@@ -21,7 +21,7 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 
 | Library | Version | Release Date | Inscription ID | Source | 
 | --- | --- | --- | --- | --- |
-| [p5.js](https://ordinals.com/inscription/b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0) | 1.9.0 | Nov 30, 2023 | b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0 | [Cloudflare](https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js)
+| [p5.js](https://ordinals.com/inscription/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0) | 1.9.2 | Mar 19, 2024 | 7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0 | [GitHub](https://github.com/processing/p5.js/releases/download/v1.9.2/p5.min.js)
 | [three.js](https://ordinals.com/inscription/8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0) | r159 | Nov 30, 2023 | 8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0 | [unpkg](https://unpkg.com/three@0.159.0/build/three.module.min.js)
 | [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 12, 2024 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
 
@@ -97,7 +97,7 @@ To populate the preview tool with a basic "Hello World" p5.js inscription, click
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="/content/b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0"></script>
+    <script src="/content/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0"></script>
     <style>
       html, body { margin: 0; padding: 0; }
       canvas { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
@@ -125,10 +125,10 @@ To populate the preview tool with a basic "Hello World" p5.js inscription, click
 You can compare the SHA checksum of the inscribed library and the official library, and verify that they're identical.
 
 ```
-$ curl -s https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js | shasum
+$ curl -s https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js | shasum
 52cc687d6d49e6a5ac135245d3232836233c113b  -
 
-$ curl -s https://ordin-delta.vercel.app/content/b6a50f5ba932b0ea7f652d9d28e59eced47bc6f8376c25e02d8b3457bb60ac8fi0 | shasum
+$ curl -s https://ordin-delta.vercel.app/content/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0 | shasum
 52cc687d6d49e6a5ac135245d3232836233c113b  -
 ```
 ## Why Elements over OCM Dimensions?
