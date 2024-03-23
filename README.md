@@ -4,9 +4,6 @@
 
 _Faster, simpler, cheaper_
 
-> [!WARNING]
-> *These inscriptions rely on Ordinals protocol's built-in Brotli compression. This is a very recent protocol upgrade in v0.12.0, and may not be widely supported just yet.*
-
 **The Wizards of Ord: Elements** are a collection of open source libraries inscribed on Bitcoin through **Ordinals Protocol's built-in brotli compression** method. This relies on HTTP `content-encoding` headers for automatically compressing and decompressing data in the browser, resulting in a more efficient use of the expensive Bitcoin blockspace, ease of use, better performance and **significant cost savings**.
 
 Inscriptions can now use these libraries directly inside their code, without having to explicitly fiddle with compression. As if loading them from a CDN.
