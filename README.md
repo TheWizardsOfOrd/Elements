@@ -19,7 +19,7 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 | Library | Version | Release Date | Inscription ID | Source | 
 | --- | --- | --- | --- | --- |
 | [p5.js](https://ordinals.com/inscription/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0) | 1.9.2 | Mar 19, 2024 | 7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0 | [GitHub](https://github.com/processing/p5.js/releases/download/v1.9.2/p5.min.js)
-| [three.js](https://ordinals.com/inscription/8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0) | r159 | Nov 30, 2023 | 8f968eb8ada1bf6275e6f8a27361a6b462a951b0102951e0fe7d30dec1d07dd4i0 | [unpkg](https://unpkg.com/three@0.159.0/build/three.module.min.js)
+| [three.js](https://ordinals.com/inscription/0d013bb60fc5bf5a6c77da7371b07dc162ebc7d7f3af0ff3bd00ae5f0c546445i0) | r163 | Mar 29, 2024 | 0d013bb60fc5bf5a6c77da7371b07dc162ebc7d7f3af0ff3bd00ae5f0c546445i0 | [unpkg](https://unpkg.com/three@0.163.0/build/three.module.min.js)
 | [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 12, 2024 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
 
 ## How to use
