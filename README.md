@@ -21,6 +21,7 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 | [p5.js](https://ordinals.com/inscription/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0) | 1.9.2 | Mar 19, 2024 | 7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0 | [GitHub](https://github.com/processing/p5.js/releases/download/v1.9.2/p5.min.js)
 | [three.js](https://ordinals.com/inscription/0d013bb60fc5bf5a6c77da7371b07dc162ebc7d7f3af0ff3bd00ae5f0c546445i0) | r163 | Mar 29, 2024 | 0d013bb60fc5bf5a6c77da7371b07dc162ebc7d7f3af0ff3bd00ae5f0c546445i0 | [unpkg](https://unpkg.com/three@0.163.0/build/three.module.min.js)
 | [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 12, 2024 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
+| [phaser.js](https://ordinals.com/inscription/0d1a04b71975ec948b36cf3ccdff415fca851b9c17144413997395f5ea166e42i0) | 3.80.1 | Feb 27, 2024 | 0d1a04b71975ec948b36cf3ccdff415fca851b9c17144413997395f5ea166e42i0 | [GitHub](https://github.com/phaserjs/phaser/releases/download/v3.80.1/phaser.min.js)
 
 ## How to use
 
