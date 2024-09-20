@@ -58,7 +58,7 @@ These example inscriptions serve a dual purpose: demonstrate the power of Elemen
 
 - Standalone
 
-  - **Inscription:** https://ordin-delta.vercel.app/content/68589e36d708c4777e5833d8d45d350929af85ca50372f4ec1ebd7125b3cc57ai0
+  - **Inscription:** https://ordinals.com/content/68589e36d708c4777e5833d8d45d350929af85ca50372f4ec1ebd7125b3cc57ai0
   - **Source:** https://github.com/TheWizardsOfOrd/Elements/blob/main/examples/degenerate/standalone/example.html
 
 ## Boilerplate code
@@ -85,11 +85,11 @@ Elements provide boilerplate code for creating standalone generative art and col
 
 It's always a good idea to preview generative art code before inscribing. The following tool should be useful.
 
-- [On-chain HTML Inscription Preview Tool](https://ordin-delta.vercel.app/content/c24b53e7733d72a8662676bd2067fa7e715fa5c2ea614b7727da9787def47aeai0)
+- [On-chain HTML Inscription Preview Tool](https://ordinals.com/content/c24b53e7733d72a8662676bd2067fa7e715fa5c2ea614b7727da9787def47aeai0)
 
 To populate the preview tool with a basic "Hello World" p5.js inscription, click the following link that pre-populates the code:
 
-- [Hello World p5.js Preview](https://ordin-delta.vercel.app/content/c24b53e7733d72a8662676bd2067fa7e715fa5c2ea614b7727da9787def47aeai0?code=PCFET0NUWVBFIGh0bWw%2BCjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxzY3JpcHQgc3JjPSIvY29udGVudC9iNmE1MGY1YmE5MzJiMGVhN2Y2NTJkOWQyOGU1OWVjZWQ0N2JjNmY4Mzc2YzI1ZTAyZDhiMzQ1N2JiNjBhYzhmaTAiPjwvc2NyaXB0PgogICAgPHN0eWxlPgogICAgICBodG1sLCBib2R5IHsgbWFyZ2luOiAwOyBwYWRkaW5nOiAwOyB9CiAgICAgIGNhbnZhcyB7IHBvc2l0aW9uOiBmaXhlZDsgdG9wOiA1MCU7IGxlZnQ6IDUwJTsgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7IH0KICAgIDwvc3R5bGU%2BCiAgICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCIgLz4KICA8L2hlYWQ%2BCiAgPGJvZHk%2BCiAgICA8c2NyaXB0PgogICAgICBmdW5jdGlvbiBzZXR1cCgpIHsKICAgICAgICBjcmVhdGVDYW52YXMoNDAwLCA0MDApOwogICAgICB9CgogICAgICBmdW5jdGlvbiBkcmF3KCkgewogICAgICAgIHRleHRTaXplKDMyKTsKICAgICAgICBmaWxsKDApOwogICAgICAgIHRleHQoIlRoZSBXaXphcmRzIG9mIE9yZCIsIDEwMCwgMjAwKTsKICAgICAgfQogICAgPC9zY3JpcHQ%2BCiAgPC9ib2R5Pgo8L2h0bWw%2B)
+- [Hello World p5.js Preview](https://ordinals.com/content/c24b53e7733d72a8662676bd2067fa7e715fa5c2ea614b7727da9787def47aeai0?code=PCFET0NUWVBFIGh0bWw%2BCjxodG1sIGxhbmc9ImVuIj4KICA8aGVhZD4KICAgIDxzY3JpcHQgc3JjPSIvY29udGVudC9iNmE1MGY1YmE5MzJiMGVhN2Y2NTJkOWQyOGU1OWVjZWQ0N2JjNmY4Mzc2YzI1ZTAyZDhiMzQ1N2JiNjBhYzhmaTAiPjwvc2NyaXB0PgogICAgPHN0eWxlPgogICAgICBodG1sLCBib2R5IHsgbWFyZ2luOiAwOyBwYWRkaW5nOiAwOyB9CiAgICAgIGNhbnZhcyB7IHBvc2l0aW9uOiBmaXhlZDsgdG9wOiA1MCU7IGxlZnQ6IDUwJTsgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7IH0KICAgIDwvc3R5bGU%2BCiAgICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCIgLz4KICA8L2hlYWQ%2BCiAgPGJvZHk%2BCiAgICA8c2NyaXB0PgogICAgICBmdW5jdGlvbiBzZXR1cCgpIHsKICAgICAgICBjcmVhdGVDYW52YXMoNDAwLCA0MDApOwogICAgICB9CgogICAgICBmdW5jdGlvbiBkcmF3KCkgewogICAgICAgIHRleHRTaXplKDMyKTsKICAgICAgICBmaWxsKDApOwogICAgICAgIHRleHQoIlRoZSBXaXphcmRzIG9mIE9yZCIsIDEwMCwgMjAwKTsKICAgICAgfQogICAgPC9zY3JpcHQ%2BCiAgPC9ib2R5Pgo8L2h0bWw%2B)
 
 ```html
 <!DOCTYPE html>
@@ -126,7 +126,7 @@ You can compare the SHA checksum of the inscribed library and the official libra
 $ curl -s https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js | shasum
 52cc687d6d49e6a5ac135245d3232836233c113b  -
 
-$ curl -s https://ordin-delta.vercel.app/content/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0 | shasum
+$ curl -s https://ordinals.com/content/7e37766541506810ba6399c4b2735121f508bd9209df43dd200bf2316b014594i0 | shasum
 52cc687d6d49e6a5ac135245d3232836233c113b  -
 ```
 ## Why Elements over OCM Dimensions?
