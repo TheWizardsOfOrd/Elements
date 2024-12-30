@@ -139,8 +139,6 @@ With Dimensions, there's also some additional overhead involved in explicitly co
 
 Moreover, Elements include a more recent version of the inscribed libraries. For example, the inscribed p5.js as a part of Elements is v1.9.0 compared to v1.6.0 with OCM Dimensions.
 
-Downside of Elements? Ordinal's built-in compression is a brand new feature. It might not be widely supported just yet.
-
 ## Need help?
 
 Join us in [The Wizards of Ord Discord](https://discord.com/invite/TheWizardsOfOrd) and we'll figure it out. Alternatively, tweet [@lifofifo](https://twitter.com/lifofifo) on X.
