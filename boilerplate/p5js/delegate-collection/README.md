@@ -5,7 +5,7 @@ This folder contains boilerplate code for creating `p5.js` generative art collec
 ## Usage
 
 1. Update and inscribe `delegate.html` with your generative art code
-2. Create individual art pieces by making delegate inscriptions to your inscribed `delegate.html`
+2. Create individual art pieces by making delegate inscriptions to your inscribed `delegate.html` ([Example batch.yml](batch.yml))
 
 ## Batch Inscribing
 
