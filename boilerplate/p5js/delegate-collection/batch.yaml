@@ -1,0 +1,13 @@
+mode: separate-outputs
+
+# Parent is for collection provenance and is different from the delegate inscription used for generate the art
+parents:
+- 6ac5cacb768794f4fd7a78bf00f2074891fce68bd65c4ff36e77177237aacacai0
+
+inscriptions:
+- delegate: <Inscription ID for `delegate.html`>
+  metadata:
+    title: Mangoes
+- delegate: <Inscription ID for `delegate.html`>
+  metadata:
+    title: Grapes

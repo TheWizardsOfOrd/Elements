@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- p5.js -->
+    <script src="/content/13a5c8e41dfc110514b450b2f15317988c0aaf276d3dbdcca9aa3c7d0b2188a7i0"></script>
+
+    <!-- Optional: cbor.js is required only if you're using the on-chain metadata -->
+    <script src="/content/95cddaee5fcc051da66aa18db8d127abfb060493f00260cee65e96000cc24c19i0"></script>
+
+    <style>
+      html, body { margin: 0; padding: 0; }
+      canvas { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      let inscriptionId, inscriptionMetadata
+      let setupComplete = false
+
+      function setup() {
+        inscriptionId = window.location.pathname.split('/')[2]
+
+        // Optional: Load on-chain Metadata
+        loadStrings(`/r/metadata/${inscriptionId}`,
+          (result) => {
+            try {
+              inscriptionMetadata = parseMetadata(JSON.parse(result[0]))
+            } catch (error) {
+              inscriptionMetadata = null
+            } finally {
+              finishSetup()
+            }
+          },
+          (error) => {
+            inscriptionMetadata = null
+            finishSetup()
+          }
+        )
+      }
+
+      function finishSetup() {
+        // Use Inscription ID as randomization seed
+        // randomSeed(hashString(inscriptionId))
+
+        // If present, access metdata JSON via `inscriptionMetadata`
+        // randomSeed(inscriptionMetadata.seed)
+
+        // console.log(`Inscription ID`, inscriptionId)
+        // console.log(`Inscription Metadata`, inscriptionMetadata)
+
+        createCanvas(windowWidth, windowHeight)
+        setupComplete = true
+      }
+
+
+      function draw() {
+        if (!setupComplete) return
+
+        // Generate art
+      }
+
+      // Hashing function to convert a string (e.g Inscription ID) to a number for randomization seed
+      function hashString(string) {
+        const prime = 16777619
+        let hash = 2166136261
+
+        for (let i = 0; i < string.length; i++) {
+          let char = string.charCodeAt(i)
+          hash ^= char
+          hash *= prime
+        }
+
+        hash >>>= 0
+
+        return hash
+      }
+
+      // Optional: Use cbor.js to decode on-chain metadata CBOR
+      function parseMetadata(metadataJSON) {
+        const byteArray = new Uint8Array(metadataJSON.match(/.{1,2}/g).map(byte => parseInt(byte, 16)))
+        return CBOR.decode(byteArray.buffer)
+      }
+    </script>
+  </body>
+</html>
