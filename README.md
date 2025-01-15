@@ -31,7 +31,8 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 1. Copy code from [Boilerplate](#boilerplate-code). Check [examples](#examples) to see it in action.
 2. Add your generative art code.
 3. [Preview](#preview-before-inscribe) your work.
-4. Inscribe using your favorite method, preferrably with compression enabled.
+4. Alternatively, test your inscription using our [regtest inscription bot](#regtest-inscription-bot) if you're a wizard holder.
+5. Inscribe using your favorite method, preferrably with compression enabled.
 
 ## Examples
 
@@ -117,6 +118,12 @@ To populate the preview tool with a basic "Hello World" p5.js inscription, click
   </body>
 </html>
 ```
+
+### Regtest Inscription Bot
+
+If you're a holder of [The Wizards of Ord](https://wizards.art), our [Discord server](https://discord.gg/TheWizardsOfOrd) provides access to a dedicated bot for inscribing to a regtest server running with content proxy to mainnet.
+
+Use the `/inscribe` command in our Discord server to test your inscriptions in the regtest environment.
 
 ## Verify authenticity
 
