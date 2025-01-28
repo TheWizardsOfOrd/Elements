@@ -22,6 +22,8 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 | [three.js](https://ordinals.com/inscription/9029843543713fe7a5a9e76f17c20aa79a6b7f8d37caf0238539cc542c37de7ci0) | r171 | Nov 29, 2024 | 9029843543713fe7a5a9e76f17c20aa79a6b7f8d37caf0238539cc542c37de7ci0 | [GitHub](https://github.com/mrdoob/three.js/blob/r171/build/three.webgpu.min.js)
 | [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 12, 2024 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
 | [phaser.js](https://ordinals.com/inscription/0d1a04b71975ec948b36cf3ccdff415fca851b9c17144413997395f5ea166e42i0) | 3.80.1 | Feb 27, 2024 | 0d1a04b71975ec948b36cf3ccdff415fca851b9c17144413997395f5ea166e42i0 | [GitHub](https://github.com/phaserjs/phaser/releases/download/v3.80.1/phaser.min.js)
+| [Tone.js](https://ordinals.com/inscription/04813d7748d918bd8a3069cb1823ebc9586f0ce16cd6a97a784581ec38d13062i0) | 15.0.4 | May 15, 2024 | 04813d7748d918bd8a3069cb1823ebc9586f0ce16cd6a97a784581ec38d13062i0 | [unpkg](https://unpkg.com/tone@15.0.4/build/Tone.js)
+| [scure-btc-signer](https://ordinals.com/inscription/39990020855d5bd14b35f8ada3c6059e0b008f6ebb673a883c1e4891b5368c74i0) | 1.6.0 | Jan 18, 2025 | 39990020855d5bd14b35f8ada3c6059e0b008f6ebb673a883c1e4891b5368c74i0 | [GitHub](https://github.com/paulmillr/scure-btc-signer/releases/download/1.6.0/scure-btc-signer.min.js)
 
 ## How to use
 
