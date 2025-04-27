@@ -19,6 +19,7 @@ _**All inscribed libraries are compressed with Ordinals protocol's built-in Brot
 | Library | Version | Release Date | Inscription ID | Source | 
 | --- | --- | --- | --- | --- |
 | [p5.js](https://ordinals.com/inscription/13a5c8e41dfc110514b450b2f15317988c0aaf276d3dbdcca9aa3c7d0b2188a7i0) | 1.11.2 | Nov 28, 2024 | 13a5c8e41dfc110514b450b2f15317988c0aaf276d3dbdcca9aa3c7d0b2188a7i0 | [GitHub](https://github.com/processing/p5.js/releases/download/v1.11.2/p5.min.js)
+| [p5.js](https://ordinals.com/inscription/bed725759768159b0868fe0e6c9cd26a4c437f9e0903f70893edad280e35d843i0) | 2.0.1 | April 23, 2025 | bed725759768159b0868fe0e6c9cd26a4c437f9e0903f70893edad280e35d843i0 | [GitHub](https://github.com/processing/p5.js/releases/download/v2.0.1/p5.min.js)
 | [three.js](https://ordinals.com/inscription/9029843543713fe7a5a9e76f17c20aa79a6b7f8d37caf0238539cc542c37de7ci0) | r171 | Nov 29, 2024 | 9029843543713fe7a5a9e76f17c20aa79a6b7f8d37caf0238539cc542c37de7ci0 | [GitHub](https://github.com/mrdoob/three.js/blob/r171/build/three.webgpu.min.js)
 | [Degenerate](https://ordinals.com/sat/45018381985) | Custom | Jan 12, 2024 | Multiple inscriptions on SAT 45018381985 | [degenerate](https://github.com/TheWizardsOfOrd/degenerate/tree/inscribe)
 | [phaser.js](https://ordinals.com/inscription/0d1a04b71975ec948b36cf3ccdff415fca851b9c17144413997395f5ea166e42i0) | 3.80.1 | Feb 27, 2024 | 0d1a04b71975ec948b36cf3ccdff415fca851b9c17144413997395f5ea166e42i0 | [GitHub](https://github.com/phaserjs/phaser/releases/download/v3.80.1/phaser.min.js)
